@@ -1,0 +1,50 @@
+#logo_footer {
+    font-size: 20px;
+    display: block;
+}
+
+#footer {
+    margin: 50px 0 0 0;
+    background-color: rgb(255, 241, 215);
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#email_icone_footer,
+#share_footer {
+    width: 30px;
+    height: 30px;
+}
+
+#email_footer {
+    color: black;
+
+}
+
+#voltar_inicio_btn {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: min(3vw, 30px);
+}
+
+@media screen and (max-width: 700px) {
+    #logo_footer {
+        display: none;
+    }
+
+    #footer_copy {
+        font-size: 3.5vw;
+    }
+
+    #email_icone_footer,
+    #share_footer {
+        width: 5vw;
+        height: 5vw;
+    }
+}

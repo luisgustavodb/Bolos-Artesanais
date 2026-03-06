@@ -1,0 +1,338 @@
+#processo {
+    padding: 50px 0 0 0;
+    background-color: rgb(233, 233, 233);
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#cards_diferença {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 50px 0;
+}
+
+#card_1,
+#card_2 {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#card_2 {
+    border: 2px solid var(--COR-PRINCIPAL);
+}
+
+#diferença_titulo {
+    font-size: min(3vw, 40px);
+}
+
+#diferença_subtitulo {
+
+    margin: 0 0 50px 0;
+    font-size: min(2vw, 30px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(75, 79, 83);
+
+}
+
+#imagem_diferença_1,
+#imagem_diferença_2 {
+    border-radius: 10px 10px 0 0;
+    width: min(40vw, 500px);
+    height: auto;
+}
+
+#cards_diferença {
+    display: flex;
+}
+
+#lista_diferença_1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item_lista_diferença_1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+}
+
+.incone_diferença_1 {
+    color: red;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-flow: row;
+}
+
+#texto_pequeno_diferença_1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px 0 20px 30px;
+    color: rgb(75, 79, 83);
+}
+
+#titulo_diferença_1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: min(2vw, 25px);
+    margin: 20px 0 20px 30px;
+}
+
+#lista_diferença_2 {
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item_lista_diferença_2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 0 0 0;
+    display: flex;
+    flex-flow: row;
+    list-style-type: none;
+}
+
+.incone_diferença_2 {
+    color: rgb(46, 172, 21);
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-flow: row;
+}
+
+#texto_pequeno_diferença_2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px 0 20px 30px;
+    color: var(--COR-PRINCIPAL);
+}
+
+#titulo_diferença_2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: min(2vw, 25px);
+    margin: 20px 0 20px 30px;
+}
+
+#como_encomendar {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#encomendar_titulo {
+    font-size: min(3vw, 40px);
+}
+
+#encomendar_subtitulo {
+
+    margin: 0 0 50px 0;
+    font-size: min(2vw, 30px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(75, 79, 83);
+
+}
+
+#numero_passo_1,
+#numero_passo_2,
+#numero_passo_3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-size: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--COR-PRINCIPAL);
+}
+
+#titulo_passo_1,
+#titulo_passo_2,
+#titulo_passo_3 {
+    font-size: min(3vw, 30px);
+}
+
+#passos_container {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#passo_1,
+#passo_2,
+#passo_3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+}
+
+#descrição_passo_1,
+#descrição_passo_2,
+#descrição_passo_3 {
+    width: 25vw;
+    font-size: min(3vw, 30px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(75, 79, 83);
+}
+
+#numero_passo_2 {
+    position: relative;
+}
+
+#numero_passo_2::before {
+    position: absolute;
+    content: "";
+    right: max(6vw, 60px);
+    width: 20vw;
+    height: 2px;
+    background-color: var(--COR-PRINCIPAL);
+}
+
+#numero_passo_2::after {
+    position: absolute;
+    content: "";
+    left: max(6vw, 60px);
+    width: 20vw;
+    height: 2px;
+    background-color: var(--COR-PRINCIPAL);
+}
+
+@media screen and (max-width: 700px) {
+    #diferença_titulo {
+        margin: 10px 0 10px 0;
+        font-size: 6vw;
+    }
+
+
+    #titulo_passo_1,
+    #titulo_passo_2,
+    #titulo_passo_3 {
+        font-size: 4.5vw;
+    }
+
+    #descrição_passo_1,
+    #descrição_passo_2,
+    #descrição_passo_3 {
+        margin: 0;
+        width: 60vw;
+        font-size: 5vw;
+    }
+
+
+    #diferença_subtitulo {
+        width: 70vw;
+        text-align: center;
+        font-size: min(4vw, 30px);
+
+    }
+
+    #card_1,
+    #card_2 {
+        padding: 0 0 20px 0;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+
+    #cards_diferença {
+        width: 100vw;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    #imagem_diferença_1,
+    #imagem_diferença_2 {
+        border-radius: 10px 10px 0 0;
+        width: min(70vw, 500px);
+        height: auto;
+    }
+
+    #titulo_diferença_1,
+    #titulo_diferença_2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: min(5vw, 25px);
+        margin: 20px 0 20px 20px;
+    }
+
+    #texto_pequeno_diferença_1,
+    #texto_pequeno_diferença_2 {
+        font-size: 2.5vw;
+        margin: 20px 0 20px 20px;
+
+    }
+
+    .incone_diferença_1,
+    .incone_diferença_2 {
+        width: 20px;
+        height: 20px;
+
+    }
+
+    .item_lista_diferença_1,
+    .item_lista_diferença_2 {
+        margin: 0 0 0 -10px;
+        font-size: 3vw;
+    }
+
+    #passos_container {
+        width: 90vw;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #numero_passo_2::before {
+        width: 0;
+        height: 0;
+    }
+
+    #numero_passo_2::after {
+        width: 0;
+        height: 0;
+    }
+
+    #passo_1,
+    #passo_2,
+    #passo_3 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        width: 40vw;
+    }
+
+    #encomendar_titulo {
+        margin: 10px 0 10px 0;
+        font-size: 6vw;
+    }
+
+    #encomendar_subtitulo {
+        width: 70vw;
+        text-align: center;
+        font-size: min(4vw, 30px);
+    }
+}

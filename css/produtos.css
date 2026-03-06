@@ -1,0 +1,227 @@
+#produtos {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    padding: 0 0 50px 0;
+}
+
+#titulo_produtos {
+    margin: 0 0 10px 0;
+    font-size: min(3vw, 40px);
+}
+
+#subtitulo_produtos {
+    margin: 0 0 50px 0;
+    font-size: min(2vw, 30px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(75, 79, 83);
+}
+
+.card {
+    height: min(35vw, 530px);
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    width: min(20vw, 300px);
+    padding: 20px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(179, 179, 179);
+    margin: 0 0 10vw 0;
+}
+
+.produto_foto {
+    display: flex;
+    justify-self: center;
+    width: min(20vw, 300px);
+    height: auto;
+    border-radius: 10px;
+}
+
+.card_titulo {
+    font-weight: 300;
+    font-size: min(2vw, 30px);
+    margin: 1vw 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card_descri {
+    margin: 0 0 1vw 0;
+    font-size: min(1.5vw, 20px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(75, 79, 83);
+}
+
+.preços_cont {
+    font-size: min(2vw, 20px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preços_cont div p {
+
+    margin: 0;
+}
+
+.kg_produtos {
+    font-size: min(1.5vw, 20px);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.preço_produtos {
+    font-size: min(1.5vw, 20px);
+    text-align: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--COR-PRINCIPAL);
+}
+
+#cards_cont {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#cards_pros {
+    width: 100vw;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card_pros {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: start;
+    width: min(20vw, 200px);
+    height: min(20vw, 200px);
+    padding: 20px;
+    text-align: center;
+}
+
+.card_pros_icon {
+    color: var(--COR-PRINCIPAL);
+    width: 2vw;
+    height: 2vw;
+}
+
+.card_pros_titulo {
+    margin: 10px;
+    font-size: min(2vw, 30px);
+}
+
+.card_pros_subtitulo {
+    margin: 0;
+    font-size: min(1.5vw, 20px);
+    color: rgb(75, 79, 83);
+}
+
+
+@media screen and (max-width: 700px) {
+    #titulo_produtos {
+        margin: 0 0 10px 0;
+        font-size: 6vw;
+    }
+
+    #subtitulo_produtos {
+        width: 70vw;
+        text-align: center;
+        font-size: min(4vw, 30px);
+
+    }
+
+    #cards_cont {
+        width: 100vw;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .produto_foto {
+        display: flex;
+        justify-self: center;
+        width: 60vw;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .card_titulo {
+        font-weight: 300;
+        font-size: 7vw;
+        margin: 1vw 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .card_descri {
+        margin: 0 0 1vw 0;
+        font-size: 5vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(75, 79, 83);
+    }
+
+    .card {
+        height: auto;
+
+        width: 60vw;
+
+    }
+
+    .kg_produtos {
+        font-size: 4vw;
+    }
+
+    .kg_produtos p {
+        padding: 0 0 10px 0;
+    }
+
+    .preço_produtos {
+        font-size: 4vw;
+    }
+
+    .preço_produtos p {
+        padding: 0 0 10px 0;
+    }
+
+    #cards_pros {
+        width: 100vw;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .card_pros {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: start;
+        width: min(40vw, 200px);
+        height: min(40vw, 200px);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card_pros_icon {
+        color: var(--COR-PRINCIPAL);
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .card_pros_titulo {
+        margin: 10px;
+        font-size: min(5vw, 30px);
+    }
+
+    .card_pros_subtitulo {
+        margin: 0;
+        font-size: min(4vw, 20px);
+        color: rgb(75, 79, 83);
+    }
+
+}
